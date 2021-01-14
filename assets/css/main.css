@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container__navbar {
+  width: auto;
+}
+.container__navbar__lista {
+  list-style: none;
+  padding: 20px;
+  flex-direction: column;
+}
+.container__navbar__button {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
