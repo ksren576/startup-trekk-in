@@ -1,10 +1,41 @@
-.container_navbar{
+.navegacion {
+  width: 100%;
+  &__navbar {
+    margin: 20px 50px;
     display: flex;
     justify-content: space-between;
-        &__navbar__lista{
-            list-style: none;
-        
-         
-        }
-        
+    &__lista {
+      list-style: none;
+      li {
+        display: inline;
+        margin: 0 5px;
+        font-weight: $fwBold;
+      }
     }
+    &__iniciarbtn {
+      background-color: $white;
+      border: none;
+      margin: 0 3px;
+      padding: 5px 10px;
+      text-transform: capitalize;
+      font-family: $raleway;
+      font-weight: $fwBold;
+    }
+    &__registrarbtn {
+      background-color: $ball-blue;
+      border: none;
+      margin: 0 3px;
+      padding: 5px 10px;
+      text-transform: capitalize;
+      color: $white;
+      font-family: $raleway;
+      font-weight: $fwBold;
+    }
+    &__menu {
+      display: flex;
+    }
+    &__buttons {
+      margin: auto 0;
+    }
+  }
+}

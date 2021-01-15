@@ -8,7 +8,7 @@
 
 // @import 'vendors/jquery-ui';
 
-//@import 'base/reset';
+@import 'base/reset';
 @import 'base/base';
 
 //@import 'layout/perfil';
@@ -16,8 +16,8 @@
 @import 'layout/navbar';
 
 @import 'components/nav';
-//@import 'components/videos';
-//@import 'components/buttons';
+@import 'components/grafico';
+@import 'components/planes';
 
 //@import 'pages/home';
 //@import 'pages/contact';

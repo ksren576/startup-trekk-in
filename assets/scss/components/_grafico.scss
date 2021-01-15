@@ -1,0 +1,26 @@
+.grafico {
+    &__titulo {
+    margin: 0 50px;
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px;
+    align-items: center;
+    &__imagen {
+      padding: 0 40px;
+      img {
+        width: 100%;
+      }
+    }
+    &__textos {
+      padding: 0 40px;
+      max-width: 450px;
+      h3 {
+      }
+      p {
+      }
+    }
+  }
+}

@@ -1,5 +1,12 @@
+body {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+}
+
 .container__escalar {
   height: 300px;
+  position: absolute;
+  z-index: -1;
 }
 
 .container_navbar {
