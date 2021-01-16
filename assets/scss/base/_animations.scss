@@ -1,0 +1,33 @@
+@keyframes agrandar {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes barras {
+  0% {
+    fill: $dark-salmon;
+  }
+  50% {
+    fill: $ball-blue;
+  }
+  100% {
+    fill: $dark-salmon;
+  }
+}
+
+@keyframes barras-2 {
+  0% {
+    fill: $melon;
+  }
+  50% {
+    fill: $middle-blue;
+  }
+  100% {
+    fill: $melon;
+  }
+}

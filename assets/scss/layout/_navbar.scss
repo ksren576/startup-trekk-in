@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     &__lista {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
       list-style: none;
       li {
         display: inline;
@@ -13,6 +17,9 @@
         a {
           color: $raising-black;
           text-decoration: none;
+          &:hover {
+            color: $spanish-gray;
+          }
         }
       }
     }
@@ -24,6 +31,14 @@
       text-transform: capitalize;
       font-family: $raleway;
       font-weight: $fwBold;
+      &:hover {
+        background-color: $middle-blue;
+        color: $white;
+      }
+      &:focus {
+        background-color: $spanish-gray;
+        color: $white;
+      }
     }
     &__registrarbtn {
       background-color: $ball-blue;
@@ -34,12 +49,31 @@
       color: $white;
       font-family: $raleway;
       font-weight: $fwBold;
+      &:hover {
+        background-color: $middle-blue;
+      }
+      &:focus {
+        background-color: $spanish-gray;
+      }
     }
     &__menu {
       display: flex;
     }
     &__buttons {
       margin: auto 0;
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+    &__burger {
+      a {
+        color: $raising-black;
+        text-decoration: none;
+      }
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
 }

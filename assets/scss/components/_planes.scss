@@ -2,18 +2,30 @@
     background-image: url('../img/bg-price.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: top top;
     width: 100%;
-    min-height: 800px;
+    min-height: 400px;
+    @media (min-width: 768px) {
+      background-position: center center;
+      min-height: 800px;
+    }
   &__container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
     &__card {
       background: $white;
       padding: 30px;
       margin: 25px;
-      width: 20%;
+      @media (min-width: 768px) {
+        width: 20%;
+      }
 
       h2 {
         font-weight: $fwRegular;
@@ -34,15 +46,29 @@
         color: $white;
         font-family: $raleway;
         font-weight: $fwBold;
+        &:hover {
+          background-color: $middle-blue;
+        }
+        &:focus {
+          background-color: $spanish-gray;
+        }
       }
 
       div {
         min-height: 30vh;
       }
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: transform 1s;
+        transform: scale(1.05);
+      }
     }
   }
   &__titulo {
-    padding: 200px 0 0;
+    padding: 100px 0 0;
+    @media (min-width: 768px) {
+      padding: 300px 0 0;
+    }
     text-align: center;
     color: $white;
   }
