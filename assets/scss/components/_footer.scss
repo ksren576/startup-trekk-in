@@ -1,0 +1,18 @@
+.footer {
+  background-color: $raising-black;
+  &__container {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    &__links {
+      a {
+        color: $lavender-gray;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    }
+    &__info {
+      color: $lavender-gray;
+    }
+  }
+}

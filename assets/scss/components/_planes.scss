@@ -4,7 +4,46 @@
     background-size: cover;
     background-position: center center;
     width: 100%;
+    min-height: 800px;
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__card {
+      background: $white;
+      padding: 30px;
+      margin: 25px;
+      width: 20%;
+
+      h2 {
+        font-weight: $fwRegular;
+      }
+
+      ul {
+        padding-inline-start: 20px;
+        font-family: $open-sans;
+      }
+
+      button {
+        width: 100%;
+        background-color: $ball-blue;
+        border: none;
+        margin: 10px 0;
+        padding: 5px 10px;
+        text-transform: capitalize;
+        color: $white;
+        font-family: $raleway;
+        font-weight: $fwBold;
+      }
+
+      div {
+        min-height: 30vh;
+      }
+    }
+  }
   &__titulo {
+    padding: 200px 0 0;
     text-align: center;
+    color: $white;
   }
 }

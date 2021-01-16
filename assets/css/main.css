@@ -19,9 +19,10 @@ body {
   background-size: cover;
   background-position: center center;
   width: 100%;
+  min-height: 800px;
 }
 .escalar__container {
-  margin: 0 50px;
+  margin: 80px 50px;
 }
 
 .navegacion {
@@ -39,6 +40,10 @@ body {
   display: inline;
   margin: 0 5px;
   font-weight: 700;
+}
+.navegacion__navbar__lista li a {
+  color: #221d23;
+  text-decoration: none;
 }
 .navegacion__navbar__iniciarbtn {
   background-color: #ffffff;
@@ -92,9 +97,61 @@ body {
   background-size: cover;
   background-position: center center;
   width: 100%;
+  min-height: 800px;
+}
+.planes__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.planes__container__card {
+  background: #ffffff;
+  padding: 30px;
+  margin: 25px;
+  width: 20%;
+}
+.planes__container__card h2 {
+  font-weight: 400;
+}
+.planes__container__card ul {
+  padding-inline-start: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.planes__container__card button {
+  width: 100%;
+  background-color: #2ab7ca;
+  border: none;
+  margin: 10px 0;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.planes__container__card div {
+  min-height: 30vh;
 }
 .planes__titulo {
+  padding: 200px 0 0;
   text-align: center;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #221d23;
+}
+.footer__container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__container__links a {
+  color: #c7c8cc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer__container__info {
+  color: #c7c8cc;
 }
 
 /*# sourceMappingURL=main.css.map */

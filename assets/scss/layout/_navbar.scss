@@ -10,6 +10,10 @@
         display: inline;
         margin: 0 5px;
         font-weight: $fwBold;
+        a {
+          color: $raising-black;
+          text-decoration: none;
+        }
       }
     }
     &__iniciarbtn {
